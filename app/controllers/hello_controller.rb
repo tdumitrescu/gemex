@@ -1,5 +1,7 @@
+require 'old_yeller'
+
 class HelloController < ApplicationController
   def index
-    render text: "helloooo world"
+    render text: OldYeller.bark("helloooo world")
   end
 end
